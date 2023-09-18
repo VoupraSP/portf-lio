@@ -86,6 +86,11 @@ body {
     font-size: 24px;
 }
 
+.container nav a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
 
 .container section {
     height: 1800px;
