@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, button, select, textarea {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --bgdark: rgb(41, 41, 41);
+    --lightgreen: rgb(184, 224, 240);
+    --lightviolet: rgb(83, 161, 224);
+    --navbar: 60px;
+}
+
+body {
+    background: var(--bgdark);
+}
+
+.container header {
+    height: calc(100vh - var(--navbar));
+    display: flex;
+    align-items: center;
+}
+
+.container header .header-container {
+    width: 50%;
+    height: fit-content;
+    padding: 0px 100px;
+}
+
+.container header .header-container p {
+    color: var(--lightgreen);
+}
+
+.container header .header-container h1 {
+    color: var(--lightviolet);
+}
+
+.container header .header-container button {
+    padding: 8px 32px; 
+    border: 0;
+    font-weight: bold;
+    color: var(--lightgreen);
+    background: var(--lightviolet);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.container header .header-container button:hover{
+    background: blueviolet;
+}
+
+.container nav {
+    height: var(--navbar);
+    background: var(--bgdark);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.container nav h2 {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container nav ul {
+    width: 100%;
+    padding-left: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container nav a {
+    text-decoration: none;
+    color: var(--lightgreen);
+    font-size: 24px;
+}
+
+
+.container section {
+    height: 1800px;
+    background: brown;
+}
+
+
