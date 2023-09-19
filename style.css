@@ -164,16 +164,20 @@ body {
 
 @media (max-width: 480px) {
 
+    .container nav {
+        width: 100%;
+        position: fixed;  
+        bottom: 0;
+        top: unset;    
+    }
+
     .container nav a {
         font-size: 17px;
     }
 
     .container nav a svg {
         display: block;
-        margin: 0 auto;
+        margin: 5px auto;
         margin-bottom: 5px;
     }
-
-    
-
 }
