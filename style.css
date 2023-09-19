@@ -34,6 +34,10 @@ body {
     padding: 0px 100px;
 }
 
+.container header .header-container h2 {
+    display: none;
+}
+
 .container header .header-container p {
     color: var(--lightgreen);
 }
@@ -98,3 +102,58 @@ body {
 }
 
 
+/* RESPONSIVIDADE */ 
+
+
+@media (max-width: 1000px) {
+    .container header .header-container {
+        width: 70%;
+    }
+
+    .container nav {
+        padding: 0 100px;
+    }
+
+    .container nav ul {
+        padding-left: 70px;
+    }
+    
+    .container nav a {
+        text-decoration: none;
+        color: var(--lightgreen);
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container header .header-container {
+        width: 100%;
+        padding: 0px 50px;
+    }
+
+    .container header .header-container h2 {
+        display: block;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    .container nav {
+        padding: 0 50px;
+    }
+
+    .container nav h2 {
+        display: none;
+    }
+
+    .container nav ul {
+        padding-left: 0px;
+    }
+    
+    .container nav a {
+        text-decoration: none;
+        color: var(--lightgreen);
+        font-size: 18px;
+    }
+
+
+}
