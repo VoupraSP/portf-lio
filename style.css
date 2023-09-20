@@ -42,7 +42,7 @@ body {
     color: var(--lightgreen);
 }
 
-.container header .header-container h1 {
+.container header .header-container .lighth1 {
     color: var(--lightviolet);
 }
 
@@ -99,11 +99,66 @@ body {
     transition: 0.3s;
 }
 
-
-.container section {
-    height: 1800px;
-    background: brown;
+.container .about {
+    display: flex;
+    margin: 120px 0;
+    padding: 0px 100px;
 }
+
+.container .about .about-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .about .about-container .lighth1 {
+    color: var(--lightgreen);
+} 
+
+.container .about .about-container p {
+    color: white;
+}
+
+.container .about .img-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .about .img-container img {
+    width: 60%;
+    height: 100%;
+}
+
+.container .about .img-container .lines {
+    width: calc(60% + 35px);
+    height: calc(100% + 35px);
+    border: 1px solid var(--lightgreen);
+    position: absolute;
+}
+
+.lines:nth-child(2) {
+    transform: rotate(-3.3deg);
+    border: 2px solid blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* RESPONSIVIDADE */ 
