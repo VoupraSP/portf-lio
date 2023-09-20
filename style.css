@@ -132,6 +132,7 @@ body {
 .container .about .img-container img {
     width: 60%;
     height: 100%;
+    object-fit: cover;
 }
 
 .container .about .img-container .lines {
@@ -208,6 +209,7 @@ body {
     }
 }
 
+
 @media (max-width: 767px) {
     .container header .header-container {
         width: 100%;
@@ -238,6 +240,21 @@ body {
         font-size: 18px;
     }
 
+    .container .about {
+        flex-direction: column;
+        align-items: center;
+        margin: 70px 0;
+        padding: 0 50px;
+    }
+
+    .container .about .about-container {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .container .about .img-container {
+        width: 100%;
+    }
 
 }
 
@@ -258,5 +275,12 @@ body {
         display: block;
         margin: 5px auto;
         margin-bottom: 5px;
+    }
+
+    .container .about {
+        margin: 50px 0;
+    }
+    .container .about .about-container {
+        font-size: 12px;
     }
 }
