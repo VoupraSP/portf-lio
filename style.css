@@ -147,9 +147,9 @@ body {
     border: 2px solid blueviolet;
 }
 
-.container .services {
+.container .services, .container .portfolio {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .container .services .service-container {
@@ -170,7 +170,6 @@ body {
     justify-content: space-between;
     color: whitesmoke;
     border-radius: 15px;
-    
 }
 
 .service-card + .service-card {
@@ -187,7 +186,86 @@ body {
     margin-bottom: 20px;
 }
 
+.portfolio {
+    background: url(/assets/portfolio-bg.png);
+    height: 550px;
+}
 
+.portfolio h1 {
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio-container {
+    max-width: 1200px;
+    display: flex;
+    padding: 0 100px;
+    margin: 80px auto;
+    
+}
+
+.portfolio .portfolio-container .portfolio-card {
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(42px);
+
+    max-width: 360px;
+    border: 1px solid violet;
+    border-radius: 10px;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.portfolio-card + .portfolio-card {
+    margin-left: 25px;
+}
+
+.portfolio .portfolio-container .portfolio-card ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+}
+
+.portfolio .portfolio-container .portfolio-card ul li {
+    border: 1px solid var(--lightgreen);
+    border-radius: 9px;
+    padding: 3px 10px;
+    margin-right: 5px;
+}
+
+.portfolio-container .portfolio-card .img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.portfolio-container .portfolio-card .img-container img {
+    width: 80%;
+    height: 100%;
+}
+
+.portfolio-container .portfolio-card .bold {
+    font-weight: bold;
+}
+
+.portfolio-container .portfolio-card p, .bold { 
+    text-align: left;
+    margin: 0;
+}
+
+.portfolio-container .portfolio-card .img-container .line-tree {
+    position: absolute;
+    width: calc(80% + 20px);
+    height: calc(100% + 20px);
+    border: 1px solid var(--lightgreen);
+    border-radius: 20px;
+    transform: rotate(-2.3deg);
+}
 
 
 
@@ -225,13 +303,14 @@ body {
         font-size: 20px;
     }
 
-    .container .about {
+    .container .about, .portfolio {
         flex-direction: column;
         align-items: center;
         margin: 70px 0;
+        height: 100%;
     }
 
-    .container .about .about-container {
+    .container .about .about-container, .portfolio-container {
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -259,10 +338,11 @@ body {
         height: 370px;
     }
 
-    .service-card + .service-card {
+    .service-card + .service-card, .portfolio-card + .portfolio-card {
         margin-left: 0px;
         margin-top: 25px;
     }
+
 }
 
 
@@ -320,7 +400,7 @@ body {
         width: 100%;
         position: fixed;  
         bottom: 0;
-        top: unset;    
+        top: unset;   
     }
 
     .container nav a {
@@ -333,10 +413,14 @@ body {
         margin-bottom: 5px;
     }
 
-    .container .about {
+    .container .about, .portfolio {
         margin: 50px 0;
     }
-    .container .about .about-container {
+    .container .about .about-container, .portfolio-container {
         font-size: 12px;
+    }
+
+    .portfolio .portfolio-container {
+        padding: 0;
     }
 }
